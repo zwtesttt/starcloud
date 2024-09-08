@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"group/internal/svc"
-	"group/pb/starcloud/rpc/group"
+	"github.com/zwtesttt/starcloud/rpc/group/internal/svc"
+	"github.com/zwtesttt/starcloud/rpc/group/pb/starcloud/rpc/group"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

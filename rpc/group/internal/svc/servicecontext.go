@@ -1,6 +1,6 @@
 package svc
 
-import "group/internal/config"
+import "github.com/zwtesttt/starcloud/rpc/group/internal/config"
 
 type ServiceContext struct {
 	Config config.Config

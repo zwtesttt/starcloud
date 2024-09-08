@@ -4,10 +4,10 @@ import (
 	"flag"
 	"fmt"
 
-	"group/internal/config"
-	"group/internal/server"
-	"group/internal/svc"
-	"group/pb/starcloud/rpc/group"
+	"github.com/zwtesttt/starcloud/rpc/group/internal/config"
+	"github.com/zwtesttt/starcloud/rpc/group/internal/server"
+	"github.com/zwtesttt/starcloud/rpc/group/internal/svc"
+	"github.com/zwtesttt/starcloud/rpc/group/pb/starcloud/rpc/group"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"

@@ -1,4 +1,4 @@
-module api
+module github.com/zwtesttt/starcloud/api
 
 go 1.23.0
 
@@ -47,8 +47,6 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace group => ../rpc/group
-
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
@@ -90,5 +88,4 @@ require (
 	google.golang.org/grpc v1.66.0 // indirect
 	google.golang.org/protobuf v1.34.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	group v0.0.0
 )

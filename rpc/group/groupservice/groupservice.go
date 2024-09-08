@@ -7,7 +7,7 @@ import (
 	"context"
 	"fmt"
 
-	"group/pb/starcloud/rpc/group"
+	"github.com/zwtesttt/starcloud/rpc/group/pb/starcloud/rpc/group"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"

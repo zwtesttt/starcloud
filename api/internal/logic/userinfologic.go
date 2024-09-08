@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"group/pb/starcloud/rpc/group"
 
-	"api/internal/svc"
-	"api/internal/types"
+	"github.com/zwtesttt/starcloud/api/internal/svc"
+	"github.com/zwtesttt/starcloud/api/internal/types"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

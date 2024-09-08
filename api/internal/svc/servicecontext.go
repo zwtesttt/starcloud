@@ -1,9 +1,9 @@
 package svc
 
 import (
-	"api/internal/config"
 	"github.com/zeromicro/go-zero/zrpc"
-	"group/groupservice"
+	"github.com/zwtesttt/starcloud/api/internal/config"
+	"github.com/zwtesttt/starcloud/rpc/group/groupservice"
 )
 
 type ServiceContext struct {

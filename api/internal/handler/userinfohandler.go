@@ -3,10 +3,10 @@ package handler
 import (
 	"net/http"
 
-	"api/internal/logic"
-	"api/internal/svc"
-	"api/internal/types"
 	"github.com/zeromicro/go-zero/rest/httpx"
+	"github.com/zwtesttt/starcloud/api/internal/logic"
+	"github.com/zwtesttt/starcloud/api/internal/svc"
+	"github.com/zwtesttt/starcloud/api/internal/types"
 )
 
 func UserInfoHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {

@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"group/internal/logic"
-	"group/internal/svc"
-	"group/pb/starcloud/rpc/group"
+	"github.com/zwtesttt/starcloud/rpc/group/internal/logic"
+	"github.com/zwtesttt/starcloud/rpc/group/internal/svc"
+	"github.com/zwtesttt/starcloud/rpc/group/pb/starcloud/rpc/group"
 )
 
 type GroupServiceServer struct {

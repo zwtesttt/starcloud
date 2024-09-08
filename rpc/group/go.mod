@@ -1,4 +1,4 @@
-module group
+module github.com/zwtesttt/starcloud/rpc/group
 
 go 1.23.0
 

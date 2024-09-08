@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 
-	"api/internal/config"
-	"api/internal/handler"
-	"api/internal/svc"
+	"github.com/zwtesttt/starcloud/api/internal/config"
+	"github.com/zwtesttt/starcloud/api/internal/handler"
+	"github.com/zwtesttt/starcloud/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"

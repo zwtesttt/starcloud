@@ -3,10 +3,9 @@ package logic
 import (
 	"context"
 	"fmt"
-	"group/pb/starcloud/rpc/group"
-
 	"github.com/zwtesttt/starcloud/api/internal/svc"
 	"github.com/zwtesttt/starcloud/api/internal/types"
+	"github.com/zwtesttt/starcloud/rpc/group/pb/starcloud/rpc/group"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

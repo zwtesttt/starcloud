@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package group;
+
+option go_package = "starcloud/rpc/group";
+
+message GetUserGroupRequest {
+  string user_id = 1;
+}
+
+message GetUserGroupResponse {
+  repeated string group_ids = 1;
+}
+
+service GroupService {
+  rpc GetUserGroup(GetUserGroupRequest) returns (GetUserGroupResponse);
+}

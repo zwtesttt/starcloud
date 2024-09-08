@@ -1,0 +1,13 @@
+Name: UserService
+Host: 0.0.0.0
+Port: 8888
+
+Mysql:
+  Datasource: root:888888@tcp(127.0.0.1:33066)/starcloud?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+
+GroupRpc:
+  Timeout: 30000
+  Etcd:
+    Hosts:
+      - 127.0.0.1:2379
+    Key: groupa.rpc

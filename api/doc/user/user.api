@@ -1,0 +1,21 @@
+syntax = "v1"
+
+info (
+	title: "user api"
+)
+
+type GetUserRequest {
+	UserId string `path:"user_id"`
+}
+
+type GetUserResponse {
+	UserID string `json:"user_id"`
+	Name   string `json:"name"`
+	Email  string `json:"email"`
+}
+
+service UserService {
+	@handler UserInfo
+	get /users/:user_id (GetUserRequest) returns (GetUserResponse)
+}
+

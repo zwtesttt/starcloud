@@ -10,4 +10,4 @@ FROM alpine:latest
 
 COPY --from=builder /app/main .
 
-CMD ["./main"]
+CMD ["/main"]

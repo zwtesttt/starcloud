@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: group-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: group
+  template:
+    metadata:
+      labels:
+        app: group
+    spec:
+      containers:
+        - name: group
+          image: starcloud/group:latest
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Never
+          volumeMounts:
+            - name: config-volume
+              mountPath: /etc/group.yaml  # 文件路径
+              subPath: group.yaml  # ConfigMap 中的文件
+      volumes:
+        - name: group-data
+          emptyDir: {}
+        - name: config-volume
+          configMap:
+            name: group-config  # 引用之前创建的 ConfigMap
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: group-service
+spec:
+  type: ClusterIP
+  selector:
+    app: group
+  ports:
+    - port: 8080
+      targetPort: 8080

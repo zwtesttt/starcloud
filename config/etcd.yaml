@@ -30,6 +30,7 @@ kind: Service
 metadata:
   name: etcd-service
 spec:
+  type: ClusterIP
   selector:
     app: etcd
   ports:

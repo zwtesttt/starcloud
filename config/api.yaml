@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+        - name: api
+          image: starcloud/api
+          ports:
+            - containerPort: 8888
+            - containerPort: 8888
+          imagePullPolicy: Never
+          volumeMounts:
+            - name: config-volume
+              mountPath: /etc/userservice.yaml  # 文件路径
+              subPath: userservice.yaml  # ConfigMap 中的文件
+      volumes:
+        - name: api-data
+          emptyDir: {}
+        - name: config-volume
+          configMap:
+            name: api-config  # 引用之前创建的 ConfigMap
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-service
+spec:
+  type: ClusterIP
+  selector:
+    app: api
+  ports:
+    - port: 8888
+      targetPort: 8888

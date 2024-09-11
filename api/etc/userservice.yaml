@@ -9,5 +9,5 @@ GroupRpc:
   Timeout: 30000
   Etcd:
     Hosts:
-      - 127.0.0.1:2379
+      - http://etcd-service.default.svc.cluster.local:2379
     Key: groupa.rpc

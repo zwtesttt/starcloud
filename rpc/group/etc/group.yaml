@@ -2,5 +2,5 @@ Name: group.rpc
 ListenOn: 0.0.0.0:8080
 Etcd:
   Hosts:
-  - 127.0.0.1:2379
+  - http://etcd-service.default.svc.cluster.local:2379
   Key: groupa.rpc
